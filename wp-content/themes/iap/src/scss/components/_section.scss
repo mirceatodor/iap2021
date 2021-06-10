@@ -1,0 +1,44 @@
+.section {
+    &.section-blog {
+        padding: 0 0 100px;
+    }
+
+    &-title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        &:after {
+            content: ' ';
+            display: block;
+            width: 56px;
+            height: 2px;
+            background: #000000;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -28px;
+        }
+    }
+    &-text {
+        font-size: 18px;
+        color: #7D7987;
+        line-height: $leading-relaxed;
+        text-align: center;
+    }
+    &-actions {
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+
+.section-blog {
+    .section-title {
+        margin-bottom: 0;
+    }
+    .row > div {
+        margin-top: 34px;
+    }
+}

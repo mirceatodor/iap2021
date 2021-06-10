@@ -1,20 +1,20 @@
 .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $gutter;
+    padding-right: $gutter;
 }
 
 .container {
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $gutter;
+    padding-right: $gutter;
 }
 
 .container-sm {
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $gutter;
+    padding-right: $gutter;
 }

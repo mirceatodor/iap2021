@@ -1,0 +1,31 @@
+.hero {
+    padding: 100px 0;
+    &.big,
+    & + .hero {
+        padding-top: 0;
+    }
+    
+    &-content {
+        // padding-right: 80px;
+    }
+    &-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: $leading-snug;
+        .big & {
+            font-size: 48px;
+        }
+    }
+    &-description {
+        font-size: 18px;
+        color: #7D7987;
+        line-height: $leading-relaxed;
+        margin-top: 25px;
+        .big & {
+            font-size: 21px;
+        }
+    }
+    &-button {
+        margin-top: 45px;
+    }
+}

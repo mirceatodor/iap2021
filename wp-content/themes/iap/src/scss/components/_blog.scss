@@ -1,0 +1,43 @@
+.blog-card {
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    height: 100%;
+    &-content {
+        padding: 20px 35px 35px;
+    }
+    &-image {
+        img {
+            width: 100%;
+        }
+    }
+    &-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: $leading-snug;
+        a {
+            display: block;
+            color: $text-color;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+    &-excerpt {
+        color: $text-muted;
+        margin-top: 12px;
+        line-height: $leading-relaxed;
+    }
+    &-link {
+        display: inline-flex;
+        align-items: center;
+        color: $brand-color;
+        margin-top: 25px;
+        &:hover {
+            text-decoration: underline;
+        }
+        svg {
+            margin-left: 10px;
+        }
+    }
+}
