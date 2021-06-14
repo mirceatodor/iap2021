@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero right">
     <div class="container">
         <div class="row middle-md">
             <div class="col-md-7">

@@ -1,12 +1,14 @@
 .hero {
-    padding: 100px 0;
-    &.big,
-    & + .hero {
+    padding-top: 100px;
+    &.big {
         padding-top: 0;
     }
-    
     &-content {
-        // padding-right: 80px;
+        padding-right: 60px;
+        .right & {
+            padding-right: 0;
+            padding-left: 60px;
+        }
     }
     &-title {
         font-size: 36px;
