@@ -7,11 +7,18 @@
 .card {
     border-radius: 20px;
     box-shadow: $box-shadow;
-    padding: 45px 25px;
+    padding: 25px 15px;
     height: 100%;
     display: block;
     color: #000;
     border: 5px solid transparent;
+    text-align: center;
+    @include responsive(sm) {
+        text-align: left;
+    }
+    @include responsive(md) {
+        padding: 45px 25px;
+    }
     &:hover {
         border: 5px solid $brand-color;
     }

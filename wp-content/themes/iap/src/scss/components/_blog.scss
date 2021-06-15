@@ -4,7 +4,10 @@
     box-shadow: $box-shadow;
     height: 100%;
     &-content {
-        padding: 20px 35px 35px;
+        padding: 20px $gutter;
+        @include responsive(md) {
+            padding: 20px 35px 35px;
+        }
     }
     &-image {
         img {

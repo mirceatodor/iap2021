@@ -1,33 +1,62 @@
 .hero {
     padding-top: 100px;
+    text-align: center;
+    @include responsive(md) {
+        text-align: left;
+    }
     &.big {
         padding-top: 0;
     }
     &-content {
-        padding-right: 60px;
+        @include responsive(md) {
+            padding-right: 30px;
+        }
+        @include responsive(lg) {
+            padding-right: 60px;
+        }
         .right & {
-            padding-right: 0;
-            padding-left: 60px;
+            @include responsive(md) {
+                padding-right: 0;
+                padding-left: 30px;
+            }
+            @include responsive(lg) {
+                padding-left: 60px;
+            }
         }
     }
     &-title {
         font-size: 36px;
         font-weight: 700;
         line-height: $leading-snug;
+        margin-top: 40px;
+        @include responsive(md) {
+            font-size: 36px;
+            margin-top: 0;
+        }
         .big & {
-            font-size: 48px;
+            @include responsive(lg) {
+                font-size: 48px;
+            }
         }
     }
     &-description {
         font-size: 18px;
         color: #7D7987;
         line-height: $leading-relaxed;
-        margin-top: 25px;
+        margin-top: 15px;
+        @include responsive(md) {
+            margin-top: 25px;
+        }
         .big & {
-            font-size: 21px;
+            @include responsive(md) {
+                font-size: 21px;
+            }
         }
     }
     &-button {
-        margin-top: 45px;
+        margin-top: 20px;
+        @include responsive(md) {
+            margin-top: 45px;
+        }
     }
 }

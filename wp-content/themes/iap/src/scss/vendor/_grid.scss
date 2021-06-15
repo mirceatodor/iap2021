@@ -12,7 +12,7 @@ $flexboxgrid-gutter-width: 2 * $gutter !default;
 // Syntax:
 // name SIZErem,
 $flexboxgrid-breakpoints:
-  xs  $xs
+  xs  $xs,
   sm  $sm,
   md  $md,
   lg  $lg,

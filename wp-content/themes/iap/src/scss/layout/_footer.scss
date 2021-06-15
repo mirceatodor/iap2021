@@ -1,16 +1,16 @@
 .footer {
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-    padding: 115px 0;
+    padding: 40px 0;
     color: #FFF;
     margin-top: 100px;
-    .container {
-        display: flex;
+    @include responsive(md) {
+        padding: 115px 0;
+    }
 
-        div {
-            width: 20%;
-            &:first-of-type {
-                width: 40%;
-            }
+    &-links {
+        margin-top: 40px;
+        @include responsive(md) {
+            margin-top: 0;
         }
     }
 
