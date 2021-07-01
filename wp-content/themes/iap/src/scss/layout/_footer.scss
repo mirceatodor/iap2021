@@ -14,12 +14,24 @@
         }
     }
 
+    &-about {
+        p:first-of-type {
+            margin-top: 0;
+        }
+        p a {
+            padding: 0;
+        }
+        img {
+            display: block;
+        }
+    }
+
     p {
         margin-top: 20px;
         line-height: 1.8;
     }
 
-    strong {
+    .widget-title {
         font-size: 20px;
         font-weight: 700;
     }

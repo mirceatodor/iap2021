@@ -14,7 +14,7 @@
         }
     }
 
-    .logo {
+    .site-logo {
         margin-left: $gutter;
         @include responsive(md) {
             margin-left: 0;
@@ -32,7 +32,7 @@
         }
     }
 
-    ul {
+    .menu {
         margin-left: auto;
         display: none;
         width: 100%;

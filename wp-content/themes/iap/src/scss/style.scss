@@ -6,6 +6,7 @@
 @import 'layout/layout';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/single';
 
 @import 'components/hero';
 @import 'components/buttons';
@@ -13,6 +14,8 @@
 @import 'components/card';
 @import 'components/testimonials';
 @import 'components/blog';
+@import 'components/widget';
+@import 'components/pagination';
 
 @import 'vendor/grid';
 @import 'vendor/slick';

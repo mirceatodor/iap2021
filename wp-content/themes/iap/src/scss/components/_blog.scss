@@ -1,6 +1,7 @@
 .blog-card {
     background: #FFF;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: $box-shadow;
     height: 100%;
     &-content {
@@ -10,8 +11,10 @@
         }
     }
     &-image {
+        display: block;
         img {
             width: 100%;
+            display: block;
         }
     }
     &-title {
@@ -43,4 +46,58 @@
             margin-left: 10px;
         }
     }
+}
+
+.blog-list {
+    background: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &-content {
+        padding: 20px 40px;
+    }
+    &-image {
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: $leading-snug;
+        a {
+            display: block;
+            color: $text-color;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+    &-excerpt {
+        color: $text-muted;
+        margin-top: 12px;
+        line-height: $leading-relaxed;
+    }
+    &-link {
+        display: inline-flex;
+        align-items: center;
+        color: $brand-color;
+        margin-top: 25px;
+        &:hover {
+            text-decoration: underline;
+        }
+        svg {
+            margin-left: 10px;
+        }
+    }
+}
+
+.blog-sidebar {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 20px;
 }

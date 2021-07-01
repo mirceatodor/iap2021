@@ -7,6 +7,7 @@
 .card {
     border-radius: 20px;
     box-shadow: $box-shadow;
+    background: #FFF;
     padding: 25px 15px;
     height: 100%;
     display: block;
@@ -23,7 +24,13 @@
         border: 5px solid $brand-color;
     }
     &-icon {
-        height: 90px;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include responsive(sm) {
+            justify-content: flex-start;
+        }
     }
     &-title {
         font-size: 24px;

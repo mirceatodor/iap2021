@@ -1,0 +1,22 @@
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a, span {
+        display: block;
+        padding: 20px;
+        background: #FFF;
+        border-radius: 5px;
+        margin: 0 5px;
+        box-shadow: $box-shadow;
+        color: $text-color;
+        border: 1px solid #FFF;
+    }
+    span {
+        border-color: $brand-color;
+        color: $brand-color;
+    }
+    a:hover {
+        color: $brand-color;
+    }
+}

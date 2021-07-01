@@ -1,0 +1,110 @@
+.post {
+    &-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &-main {
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFF;
+        padding-bottom: 60px;
+    }
+    &-thumbnail {
+        img {
+            display: block;
+        }
+    }
+    &-content {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px $gutter 0;
+        line-height: $leading-loose;
+        @include responsive(md) {
+            padding-top: 60px;
+        }
+        > * {
+            margin-top: 20px;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: $leading-normal;
+        }
+
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        li {
+            margin: 0;
+            position: relative;
+            padding-left: 25px;
+            &:before {
+                content: ' ';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $text-color;
+                position: absolute;
+                top: 12px;
+                left: 0;
+            }
+        }
+    }
+    &-share {
+        position: absolute;
+        top: 60px;
+        left: -80px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            position: relative;
+            margin-bottom: 1px;
+        }
+        svg {
+            display: block;
+        }
+        .facebook {
+            background: #3B5998;
+            svg {
+                width: 23px;
+                height: 23px;
+            }
+        }
+        .twitter {
+            background: #1DA1F2;
+            svg {
+                width: 21px;
+                height: 17px;
+            }
+        }
+        .linkedin {
+            background: #0077B5;
+            svg {
+                width: 21px;
+                height: 20px;
+            }
+        }
+        .pinterest {
+            background: #CB2027;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
